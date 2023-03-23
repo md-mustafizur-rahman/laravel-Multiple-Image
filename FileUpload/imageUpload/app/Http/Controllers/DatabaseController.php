@@ -58,7 +58,7 @@ class DatabaseController extends Controller
             session()->put('name', $loginCheck->name);
             echo session()->get('employee_id');
 
-            return redirect('/');
+            return redirect('/show');
         } else {
             echo "wrong";
         }
